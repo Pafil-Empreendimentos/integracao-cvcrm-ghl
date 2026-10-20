@@ -1,0 +1,20 @@
+# Segredos e ambiente
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Saidas dos scripts (contem dado pessoal de leads: nunca versionar)
+leads_ghl.csv
+*.csv
+
+# Editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

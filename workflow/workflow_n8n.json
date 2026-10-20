@@ -584,7 +584,7 @@
       "maxTries": 3,
       "waitBetweenTries": 5000,
       "onError": "continueErrorOutput",
-      "notes": "Confirmado contra a doc oficial (23/set/2026, marketplace.gohighlevel.com/docs/ghl/contacts/create-task): POST /contacts/:contactId/tasks, header Version: v3, Bearer, corpo {title, dueDate (ISO 8601), completed (bool)}. Atualizado 24/set/2026: title/concluida agora vem de tarefa_cvcrm.nome/concluida, que por sua vez vem do endpoint CVDW /leads/tarefas (campo 'descricao' la', situacao='C'), nao mais do array embutido no lead. data do CVCRM ('2026-09-24 16:53:00', sem timezone) e' tratada como horario de Brasilia (-03:00) direto, sem lib de timezone. NAO tem a direcao contraria (GHL->CVCRM) ainda -- endpoint de criacao de tarefa no CVCRM nao foi encontrado, ver RUNBOOK.md."
+      "notes": "Confirmado contra a doc oficial (23/set/2026, marketplace.gohighlevel.com/docs/ghl/contacts/create-task): POST /contacts/:contactId/tasks, header Version: v3, Bearer, corpo {title, dueDate (ISO 8601), completed (bool)}. Atualizado 24/set/2026: title/concluida agora vem de tarefa_cvcrm.nome/concluida, que por sua vez vem do endpoint CVDW /leads/tarefas (campo 'descricao' la', situacao='C'), nao mais do array embutido no lead. data do CVCRM ('2026-09-24 16:53:00', sem timezone) e' tratada como horario de Brasilia (-03:00) direto, sem lib de timezone. NAO tem a direcao contraria (GHL->CVCRM) ainda -- o endpoint de criacao de tarefa no CVCRM so existe na API v3 (ver docs/licoes-aprendidas.md)."
     },
     {
       "parameters": {

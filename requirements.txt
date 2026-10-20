@@ -1,0 +1,3 @@
+# Dependencias dos scripts desta pasta (o workflow roda dentro do n8n e nao usa Python).
+psycopg[binary]==3.2.3    # driver PostgreSQL
+python-dotenv==1.0.1      # carrega o .env
