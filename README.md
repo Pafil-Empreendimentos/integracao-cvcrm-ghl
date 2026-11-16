@@ -70,7 +70,7 @@ falhou estão contados em [`docs/licoes-aprendidas.md`](docs/licoes-aprendidas.m
 - O banco PostgreSQL da plataforma de dados já em pé. O schema `integracao` fica no mesmo
   banco e lê `bronze.leads`. O script de exportação de leads também usa `gold.fato_leads`.
 - Um n8n com acesso ao Postgres e uma URL pública para receber os webhooks (hoje, um túnel
-  ngrok na VM, descrito em [`docs/operacao.md`](docs/operacao.md)).
+  túnel da Cloudflare em `hooks.pafiladm.com.br`, descrito em [`docs/operacao.md`](docs/operacao.md)).
 - Acesso de administrador no CVCRM (webhooks e API) e no GHL (token de integração).
 - Python 3.10 ou mais novo para os scripts.
 
@@ -144,6 +144,6 @@ interações, tarefas e visitas já funcionam nos dois sentidos. Está pendente:
   calendário de teste);
 - reativar a reconciliação a cada 6 horas, que está desligada de propósito;
 - trocar o login pessoal usado na API v3 do CVCRM por uma conta de serviço;
-- substituir o túnel ngrok por um domínio da própria empresa.
+- ~~substituir o túnel ngrok por um domínio da própria empresa~~ (feito: `hooks.pafiladm.com.br`, ver `docs/operacao.md`).
 
 O acompanhamento fica nas issues deste repositório.
